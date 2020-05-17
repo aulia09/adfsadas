@@ -1,3 +1,6 @@
+@media (max-width: 1024px) {}
+
+
 /* Tablet */
 
 @media screen and (max-width: 768px) {
@@ -5,30 +8,31 @@
         width: 50%;
     }
 
+
 }
 
 
+
 /* mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     .menu-toggle {
         display: flex;
-        z-index: 51;
     }
 
     nav ul {
         position: absolute;
-        background-color: rgb(219, 148, 15);
+        background-color: black;
         right: 0;
         top: 0;
         height: 100vh;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        z-index: 50;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: all 0.5s;
         opacity: 0;
+        width: 100%;
     }
 
     nav ul.slide {
@@ -36,4 +40,41 @@
         opacity: 1;
     }
 
+}
+
+@media (max-width: 600px) {
+    .portofolio {
+        grid-template-areas:
+            'hero'
+            'feature-1'
+            'feature-2'
+            'hero1'
+            'feature-3'
+            'feature-4';
+
+    }
+
+    .hero1 {
+        min-height: 300px;
+    }
+
+    .hero {
+        min-height: 300px;
+    }
+
+    .feature-1 {
+        min-height: 300px;
+    }
+
+    .feature-2 {
+        min-height: 300px;
+    }
+
+    .feature-3 {
+        min-height: 300px;
+    }
+
+    .feature-4 {
+        min-height: 300px;
+    }
 }
